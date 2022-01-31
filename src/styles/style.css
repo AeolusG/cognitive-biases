@@ -50,7 +50,7 @@ color: #fe8a02;
   background-size: cover;
   opacity: 0.1;
 
-  background-image: url(../../images/background.png);
+  background-image: url(../background.png);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -66,7 +66,7 @@ color: #fe8a02;
   background-size: cover;
   opacity: 0.1;
 
-  background-image: url(../../images/background.png);
+  background-image: url(../background.png);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -359,24 +359,6 @@ padding-bottom: 86px;
 .content-block__column--light p {
   color: #FFFFFF;
 }
-#premature-optimization {
-
-
-}
-#distortion-of-novelty {
-
-
-}
-
-#hyperbolic-depreciation {
-
-
-}
-#errors-in-planning {
-
-
-
-}
 .backgroundcolor--dark {
   background-color: #B09A81;
   z-index: 1;
@@ -466,7 +448,7 @@ padding-bottom: 86px;
 
 .subscribe__btn::before {
   content: "";
-  background-image: url(https://raw.githubusercontent.com/hexlet-components/projects-css-l1-cognitive-biases/dae04eefc6279a31f944d3c326e4531a7f98a6fb/images/send.svg);
+  background-image: url(../send.svg);
   width: 24px;
   height: 24px;
 }
