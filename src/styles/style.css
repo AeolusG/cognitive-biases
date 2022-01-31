@@ -1,0 +1,513 @@
+/* stylelint-disable no-descending-specificity */
+
+@font-face {
+  font-family: "Neucha";
+  src: url("../fonts/Neucha-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #2a2626;
+  font: 16px/1.6em "OpenSans", sans-serif;
+  background-color: #F5F4F0;
+}
+/** нужно для тестов **/
+ h2 {
+  font-size: 60px;
+font-weight: 400;
+font-family: "Neucha", sans-serif;
+margin-top: 0;
+line-height: 72px;
+color: #fe8a02;
+}
+/** классы не должны быть привязаны к разметке **/
+.wrapper {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 0 20px;
+}
+.background {
+  position: relative;
+}
+ .background::before {
+  content: "";
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  background-image: url(../../images/background.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+.background--dark {
+  position: relative;
+}
+.background--dark::before {
+  content: "";
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  background-image: url(../../images/background.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+
+}
+
+.promo {
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.promo__wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.promo__wrap p {
+  line-height: 25px;
+  margin: 0;
+}
+.promo__column--padding {
+  padding-left: 30px;
+}
+.promo__column p {
+  margin-bottom: 20px;
+}
+
+.promo__column p:nth-last-of-type() {
+  margin-bottom: 0px;
+}
+
+.promo__container {
+  display: flex;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.promo__col {
+  width: 50%;
+  position: relative;
+}
+.promo__col--extended {
+  width: 70%;
+}
+
+.promo__col img {
+  height: 525px;
+  top: -50px;
+  right: -270px;
+  position: absolute;
+  z-index: 1;
+  max-width: 1082px;
+}
+
+.title {
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+  font-weight: 400;
+  font-size: 72px;
+  margin: 0;
+}
+
+.promo .title {
+  position: relative;
+  z-index: 3;
+  margin-top: 0px;
+}
+
+.title--medium {
+  font-size: 60px;
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+.title--light {
+  color: white;
+}
+.title--dark {
+  color: #2a2626;
+}
+.title--small {
+  font-size: 52px;
+  color: white;
+  width: 350px;
+}
+
+.title span {
+  color: #fe8a02;
+}
+
+.promo__column {
+
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.promo__column p {
+
+  font-size: 16px;
+  color: #2a2626;
+  line-height: 26px;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: #fe8a02;
+  font-family: "OpenSans", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 24px;
+  line-height: 25px;
+  margin-top: 39px;
+  border: none;
+  display: block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #df7a05;
+}
+
+.menu__title a {
+  text-decoration: none;
+  color: #fe8a02;
+}
+
+.introduction {
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 100px;
+}
+
+.introduction__video {
+  position: relative;
+  top: 100px;
+  z-index: 1;
+}
+
+.introduction__descr {
+  margin-bottom: -75px;
+}
+
+.menu {
+  background-color: #42413c;
+  padding-top: 100px;
+}
+
+.menu__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.menu__col {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+.menu__col p {
+  font-size: 16px;
+  color: #2A2626;
+  line-height: 25px;
+  margin: 0;
+}
+
+.menu__number {
+  font-family: "Neucha", sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #42413c;
+}
+
+.menu__item {
+  background-color: #F5F4F0;
+  padding: 24px;
+}
+
+.menu__title {
+  color: #FE8A02;
+  font-family: "Neucha", sans-serif;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 0%;
+}
+
+.menu__title a:hover {
+  color: #2A2626;
+}
+
+.menu__cards--style p:nth-child(1) {
+  margin-top: 30px;
+}
+
+.space {
+  padding-top: 100px;
+padding-bottom: 86px;
+}
+.shadow-effect {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+.info {
+  display: flex;
+}
+.info__col {
+  width: 52%;
+}
+.info__col img {
+  max-width: 100%;
+}
+.info__col:nth-child(even) {
+  width: 45%;
+  margin-left: 30px;
+}
+
+
+
+.content-block__title {
+  font-size: 16px;
+  line-height: 25px;
+  background-color: #B09A81;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  width: 100%;
+  z-index: 1;
+}
+
+.content-block__title--light {
+  background-color: #FFFFFF;
+  color: #B09A81;
+}
+.info-reverse__column-1 {
+  width: 52%;
+  margin-left: 30px;
+}
+.info-reverse__column-1 img {
+  max-width: 100%;
+}
+
+.info-reverse__column-2 {
+  width: 45%;
+
+}
+
+.info__description {
+  font-family: "Neucha", sans-serif;
+  font-size: 34px;
+  line-height: 40px;
+  margin-top: 30px;
+}
+.info__description--light {
+  color: #ffffff;
+}
+.content-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-block__column {
+  width: 50%;
+  margin-top: 0;
+}
+.content-block__column:nth-child(even) {
+  padding-right: 15px;
+}
+.content-block__column:nth-child(odd) {
+  padding-left: 15px;
+}
+.content-block__column p {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.content-block__column--light p {
+  color: #FFFFFF;
+}
+#premature-optimization {
+
+
+}
+#distortion-of-novelty {
+
+
+}
+
+#hyperbolic-depreciation {
+
+
+}
+#errors-in-planning {
+
+
+
+}
+.backgroundcolor--dark {
+  background-color: #B09A81;
+  z-index: 1;
+}
+.info__subtitle {
+  color: #908D8B;
+  font-size: 24px;
+  font-family: "Neucha", sans-serif;
+  margin: 0;
+  line-height: 30px;
+}
+
+.info__subtitle--lighter {
+  color: #D7CCC0;
+  font-size: 24px;
+  font-family: "Neucha", sans-serif;
+  margin: 0;
+  line-height: 30px;
+}
+
+.description--lighter {
+  color: #FFFFFF;
+}
+
+.column--lighter {
+  color: #FFFFFF;
+}
+.footer {
+  background-color: #ffffff;
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  background-color: #42413C;
+  color: white;
+  padding: 40px;
+  margin-bottom: 70px;
+}
+
+.subscribe__column {
+  width: 55%;
+}
+
+.subscribe__column p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.subscribe__column h2 {
+  font-size: 34px;
+  line-height: 40px;
+  color: white;
+  margin: 0;
+}
+
+.subscribe__input {
+  flex-grow: 1;
+  border: none;
+}
+.subscribe__input::placeholder {
+  color: #757575;
+  font-family: "OpenSans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 20%;
+
+}
+.subscribe__label {
+  font-size: 18px;
+  width: 100%;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.subscribe__btn {
+  padding: 15px 25px;
+  background-color: #fe8a02;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe__btn:hover {
+  background-color: #df7a05;
+}
+
+.subscribe__btn::before {
+  content: "";
+  background-image: url(https://raw.githubusercontent.com/hexlet-components/projects-css-l1-cognitive-biases/dae04eefc6279a31f944d3c326e4531a7f98a6fb/images/send.svg);
+  width: 24px;
+  height: 24px;
+}
+.input__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe__form input {
+  padding-left: 15px;
+  outline: none;
+}
+
+.subscribe h3 {
+  font-size: 34px;
+  line-height: 40px;
+
+}
+.subscribe__confirm {
+  margin: 0;
+  font-size: 12px;
+}
+.subscribe__text a {
+  color: white;
+  text-decoration: underline;
+}
+.footer__text {
+  text-align: center;
+}
+.footer__text p {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer__text p a{
+  color: #1085c5;
+}
