@@ -7,3 +7,12 @@ lint:
 
 deploy:
 	npx surge ./src/
+
+minify: 
+	gulp concat
+
+autoprefix:
+	gulp add-prefix
+
+optimize:
+	gulp optimize-img
