@@ -1,15 +1,14 @@
 # cognitive-biases
 
-Первый проект по верстке "Когнитивные искажения"
-На данный момент есть только десктопная вресия лендинга, адаптивная находится в стадии разработки.
+Верстка десктопного лендинга "Когнитивные искажения"
 
-ссылка на проект на сервисе surge:
-https://cognitive-biases-olga.surge.sh/
+![Иллюстрация к проекту](https://github.com/AeolusG/cognitive-biases/blob/main/src/assets/images/content_img/main.png)
+
+Ссылка на проект на сервисе surge:
+https://magenta-sign.surge.sh/
 
 В проекте использованы следующие технологии:
 
 - HTML
 - CSS
-- БЭМ
-- stylelint
-- htmlhint
+- Gulp
